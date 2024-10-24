@@ -1,0 +1,815 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Migas amigas</title>
+    <meta name="description" content="Descubre los sabores artesanales en La Panadería [Nombre de la Panadería] en [Ubicación]. Ofrecemos pan fresco, pasteles y más. ¡Visítanos hoy!" />
+    <meta property="og:title" content="La Panadería Delicioso Sabor en [Ubicación] | Panadería [Nombre de la Panadería]" />
+    <meta property="og:description" content="Descubre los sabores artesanales en La Panadería [Nombre de la Panadería] en [Ubicación]. Ofrecemos pan fresco, pasteles y más. ¡Visítanos hoy!" />
+    <meta property="og:url" content="URL-de-la-página" />
+    <link rel="icon"
+        href="./cabecera.png"
+        type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+
+</head>
+
+<body id="inicio">
+    <div id="alerta-cookies" class="animate__animated animate__backInUp alerta-cookies">
+        Este site utiliza cookies. <a id="informacion-cookies" href="#">Mais informações</a>
+        <button id="cerrar-alerta1">Aceitar</button>
+        <button id="cerrar-alerta2">Gerenciar cookies</button>
+    </div>
+    <header>
+        <h1 class="animate__animated animate__rotateInDownLeft">
+            <a href="#inicio">
+                <img id="logo" src="./logo.png" alt="logo">
+            </a>
+        </h1>
+
+        <nav>
+            <ul class="animate__animated animate__rotateInDownRight">
+                <li><a href="#panaderia">Padaria <img width="50" height="50" src="https://img.icons8.com/ios/50/bread.png" alt="bread"/></a></li>
+                <li><a href="#pasteleria">Pastelaria - Padaria<img width="50" height="50" src="https://img.icons8.com/ios/50/cupcake.png" alt="cupcake"/></a></li>
+                <li><a href="#empanadas">Empadões<img width="48" height="48" src="https://img.icons8.com/pulsar-line/48/croissant.png" alt="croissant"/></a></li>
+                <li><a href="#contacto">Contato<img width="50" height="50" src="https://img.icons8.com/ios-filled/50/cell-phone.png" alt="cell-phone"/></a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="idiomas">
+        <!-- Adicione um botão para abrir o modal -->
+        <div class="descuento">
+            <button class="animate__animated animate__slideInLeft btn-custom" id="abrir-modal">QUER UM DESCONTO?</button>
+        
+            <!-- Defina o modal -->
+            <div id="mi-modal" class="modal">
+                <div class="modal-contenido">
+                    <span class="cerrar-modal" id="cerrar-modal">&times;</span>
+                    <p>Preencha nosso formulário no final da página e o desconto será enviado para o seu e-mail. <br /><br /><a href="#contacto">Ir para o formulário</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="idiomas">
+        <a class="animate__animated animate__zoomInUp" href="./migasp.html"><img src="./icons8-portugal-96.png" alt=""></a>
+        <a class="animate__animated animate__zoomInUp" href="./migas.html"><img src="icons8-españa-96.png" alt=""></a>
+       </div>
+    </section>
+    <section class="animate__animated animate__backInLeft contenedor-texto loop">
+        <h2> "migas amigas, sua padaria <span class="typed"></span></h2>
+    </section>
+    <section id="sobrenosotros">
+        <img id="nosotrospanimg" class="animate__animated animate__backInLeft" src="./pan.jpg" alt="">
+        <p id="nosotrosp" class="animate__animated animate__bounceInRight">Somos uma padaria familiar localizada na bela fronteira com Portugal, conhecida como "Migas amigas". Há décadas, temos estado a assar pão fresco e deliciosos petiscos para satisfazer os gostos da nossa comunidade.</p>
+    </section>
+    <section id="elaboración">
+        <div class="elaboracion">
+            <p id="texto-mostrar-video">Quer ver como fazemos o nosso pão? <img src="./hand.gif" alt="click"></p>
+            <div id="video-container">
+                <iframe class="animate__animated animate__zoomIn" width="560" height="315"
+                    src="https://www.youtube.com/embed/7ohgVpbOiKY?si=R79F9a4vln2zRYif" title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+                <p class="animate__animated animate__bounceInUp">"O aroma e o sabor do nosso pão, transmitidos de geração em geração, são o legado que nos define."</p>
+            </div>
+        </div>
+    </section>
+    <section id="panaderia">
+        <h2>Padaria</h2>
+        <div id="panaderiaCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <div class="card" style="width: 18rem;">
+                                    <img class="card-img-top" src="pan.jpg" alt="Imagem do cartão">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Pão de Trigo</h5>
+                                        <p class="card-text">Pão de trigo fresco e delicioso.</p>
+                                        <a href="#" class="btn-custom">Ir para algum lugar</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="card" style="width: 18rem;">
+                                    <img class="card-img-top" src="pan.jpg" alt="Imagem do cartão">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Bolos de Canela</h5>
+                                        <p class="card-text">Bolos de canela recém-assados.</p>
+                                        <a href="#" class="btn-custom">Ir para algum lugar</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="card" style="width: 18rem;">
+                                    <img class="card-img-top" src="pan.jpg" alt="Imagem do cartão">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Croissants</h5>
+                                        <p class="card-text">Croissants dourados e fofinhos.</p>
+                                        <a href="#" class="btn-custom">Ir para algum lugar</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="card" style="width: 18rem;">
+                                    <img class="card-img-top" src="pan.jpg" alt="Imagem do cartão">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Pão Integral</h5>
+                                        <p class="card-text">Pão integral com grãos saudáveis.</p>
+                                        <a href="#" class="btn-custom">Ir para algum lugar</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Adicione mais cartões aqui -->
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <div class="card" style="width: 18rem;">
+                                    <img class="card-img-top" src="pan.jpg" alt="Imagem do cartão">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Pão Multigrãos</h5>
+                                        <p class="card-text">Pão com múltiplos grãos e sementes.</p>
+                                        <a href="#" class="btn-custom">Ir para algum lugar</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="card" style="width: 18rem;">
+                                    <img class="card-img-top" src="pan.jpg" alt="Imagem do cartão">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Muffins</h5>
+                                        <p class="card-text">Muffins fofinhos e deliciosos.</p>
+                                        <a href="#" class="btn-custom">Ir para algum lugar</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="card" style="width: 18rem;">
+                                    <img class="card-img-top" src="pan.jpg" alt="Imagem do cartão">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Pão de Centeio</h5>
+                                        <p class="card-text">Pão de centeio de alta qualidade.</p>
+                                        <a href="#" class="btn-custom">Ir para algum lugar</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="card" style="width: 18rem;">
+                                    <img class="card-img-top" src="pan.jpg" alt="Imagem do cartão">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Baguetes</h5>
+                                        <p class="card-text">Baguetes crocantes e deliciosas.</p>
+                                        <a href="#" class="btn-custom">Ir para algum lugar</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Adicione mais cartões aqui para o segundo slide -->
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <div class="card" style="width: 18rem;">
+                                    <img class="card-img-top" src="pan.jpg" alt="Imagem do cartão">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Pão Multigrãos</h5>
+                                        <p class="card-text">Pão com múltiplos grãos e sementes.</p>
+                                        <a href="#" class="btn-custom">Ir para algum lugar</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="card" style="width: 18rem;">
+                                    <img class="card-img-top" src="pan.jpg" alt="Imagem do cartão">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Muffins</h5>
+                                        <p class="card-text">Muffins fofinhos e deliciosos.</p>
+                                        <a href="#" class="btn-custom">Ir para algum lugar</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="card" style="width: 18rem;">
+                                    <img class="card-img-top" src="pan.jpg" alt="Imagem do cartão">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Pão de Centeio</h5>
+                                        <p class="card-text">Pão de centeio de alta qualidade.</p>
+                                        <a href="#" class="btn-custom">Ir para algum lugar</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="card" style="width: 18rem;">
+                                    <img class="card-img-top" src="pan.jpg" alt="Imagem do cartão">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Baguetes</h5>
+                                        <p class="card-text">Baguetes crocantes e deliciosas.</p>
+                                        <a href="#" class="btn-custom">Ir para algum lugar</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Adicione mais cartões aqui para o terceiro slide -->
+                        </div>
+                    </div>
+                </div>
+                <!-- Adicione mais slides e cartões conforme necessário -->
+            </div>
+            <!-- Controlos do carrossel -->
+            <a class="carousel-control-prev" href="#panaderiaCarousel" role="button" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+            </a>
+            <a class="carousel-control-next" href="#panaderiaCarousel" role="button" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Próximo</span>
+            </a>
+        </div>
+    </section>
+    <section id="nuestrolocal1" style="background-image: url(./local.jpg);">
+
+    </section>
+    <section id="pasteleria">
+        <h2>Confeitaria - Bolos</h2>
+        <div class="container">
+            <div class="accordion" id="accordionPanaderia">
+    
+                <!-- Acordeón 1 -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="heading1">
+                        <button class="b1 accordion-button" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapse1" aria-expanded="true" aria-controls="collapse1">
+                            Pão de Trigo
+                        </button>
+                    </h2>
+                    <div id="collapse1"
+                        class="animate__animated animate__slideInLeft customac accordion-collapse collapse show"
+                        aria-labelledby="heading1" data-bs-parent="#accordionPanaderia">
+                        <div class="accordion-body">
+                            <img src="pan.jpg" alt="Pão de Trigo">
+                            <div class="body-accordion">
+                                <p>Descrição do pão de trigo fresco e delicioso.</p>
+                                <a href="#" class="btn btn-custom">Ir para algum lugar</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Acordeón 2 -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="heading2">
+                        <button class="b2 customac accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
+                            Bolos de Canela
+                        </button>
+                    </h2>
+                    <div id="collapse2"
+                        class="animate__animated animate__slideInRight customac accordion-collapse collapse"
+                        aria-labelledby="heading2" data-bs-parent="#accordionPanaderia">
+                        <div class="accordion-body">
+                            <img src="pan.jpg" alt="Bolos de Canela">
+                            <div class="body-accordion">
+                                <p>Descrição dos bolos de canela recém-assados.</p>
+                                <a href="#" class="btn btn-custom">Ir para algum lugar</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Acordeón 3 -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="heading3">
+                        <button class="b3 customac accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
+                            Tarte de Maçã
+                        </button>
+                    </h2>
+                    <div id="collapse3"
+                        class="animate__animated animate__slideInLeft customac accordion-collapse collapse"
+                        aria-labelledby="heading3" data-bs-parent="#accordionPanaderia">
+                        <div class="accordion-body">
+                            <img src="pan.jpg" alt="Tarte de Maçã">
+                            <div class="body-accordion">
+                                <p>Deliciosa tarte de maçã caseira com uma base crocante.</p>
+                                <a href="#" class="btn btn-custom">Ir para algum lugar</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Acordeón 4 -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="heading4">
+                        <button class="b4 customac accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapse4" aria-expanded="false" aria-controls="collapse4">
+                            Bolachas de Chocolate
+                        </button>
+                    </h2>
+                    <div id="collapse4"
+                        class="animate__animated animate__slideInRight customac accordion-collapse collapse"
+                        aria-labelledby="heading4" data-bs-parent="#accordionPanaderia">
+                        <div class="accordion-body">
+                            <img src="pan.jpg" alt="Bolachas de Chocolate">
+                            <div class="body-accordion">
+                                <p>Deliciosas bolachas de chocolate com pedaços de chocolate negro.</p>
+                                <a href="#" class="btn btn-custom">Ir para algum lugar</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Acordeón 5 -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="heading5">
+                        <button class="b5 customac accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapse5" aria-expanded="false" aria-controls="collapse5">
+                            Croissants
+                        </button>
+                    </h2>
+                    <div id="collapse5"
+                        class="animate__animated animate__slideInLeft customac accordion-collapse collapse"
+                        aria-labelledby="heading5" data-bs-parent="#accordionPanaderia">
+                        <div class="accordion-body">
+                            <img src="pan.jpg" alt="Croissants">
+                            <div class="body-accordion">
+                                <p>Os croissants recém-assados com uma camada dourada e crocante.</p>
+                                <a href="#" class="btn btn-custom">Ir para algum lugar</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Acordeón 6 -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="heading6">
+                        <button class="b6 customac accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapse6" aria-expanded="false" aria-controls="collapse6">
+                            Bolo de Cenoura
+                        </button>
+                    </h2>
+                    <div id="collapse6"
+                        class="animate__animated animate__slideInRight customac accordion-collapse collapse"
+                        aria-labelledby="heading6" data-bs-parent="#accordionPanaderia">
+                        <div class="accordion-body">
+                            <img src="pan.jpg" alt="Bolo de Cenoura">
+                            <div class="body-accordion">
+                                <p>Delicioso bolo de cenoura com cobertura de queijo cremoso.</p>
+                                <a href="#" class="btn btn-custom">Ir para algum lugar</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Acordeón 7 -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="heading7">
+                        <button class="b7 customac accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapse7" aria-expanded="false" aria-controls="collapse7">
+                            Donuts Glaceados
+                        </button>
+                    </h2>
+                    <div id="collapse7"
+                        class="animate__animated animate__slideInLeft customac accordion-collapse collapse"
+                        aria-labelledby="heading7" data-bs-parent="#accordionPanaderia">
+                        <div class="accordion-body">
+                            <img src="pan.jpg" alt="Donuts Glaceados">
+                            <div class="body-accordion">
+                                <p>Deliciosos donuts glaceados com diferentes sabores e cores.</p>
+                                <a href="#" class="btn btn-custom">Ir para algum lugar</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Acordeón 8 -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="heading8">
+                        <button class="b8 customac accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapse8" aria-expanded="false" aria-controls="collapse8">
+                            Muffins de Mirtilo
+                        </button>
+                    </h2>
+                    <div id="collapse8"
+                        class="animate__animated animate__slideInRight customac accordion-collapse collapse"
+                        aria-labelledby="heading8" data-bs-parent="#accordionPanaderia">
+                        <div class="accordion-body">
+                            <img src="pan.jpg" alt="Muffins de Mirtilo">
+                            <div class="body-accordion">
+                                <p>Deliciosos muffins de mirtilo frescos e fofos.</p>
+                                <a href="#" class="btn btn-custom">Ir para algum lugar</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Acordeón 9 -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="heading9">
+                        <button class="b9 customac accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapse9" aria-expanded="false" aria-controls="collapse9">
+                            Pão Integral
+                        </button>
+                    </h2>
+                    <div id="collapse9"
+                        class="animate__animated animate__slideInLeft customac accordion-collapse collapse"
+                        aria-labelledby="heading9" data-bs-parent="#accordionPanaderia">
+                        <div class="accordion-body">
+                            <img src="pan.jpg" alt="Pão Integral">
+                            <div class="body-accordion">
+                                <p>Pão integral recém-assado com grãos inteiros e sementes.</p>
+                                <a href="#" class="btn btn-custom">Ir para algum lugar</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Acordeón 10 -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="heading10">
+                        <button class="b10 customac accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapse10" aria-expanded="false" aria-controls="collapse10">
+                            Cupcakes de Chocolate
+                        </button>
+                    </h2>
+                    <div id="collapse10"
+                        class="animate__animated animate__slideInRight customac accordion-collapse collapse"
+                        aria-labelledby="heading10" data-bs-parent="#accordionPanaderia">
+                        <div class="accordion-body">
+                            <img src="pan.jpg" alt="Cupcakes de Chocolate">
+                            <div class="body-accordion">
+                                <p>Deliciosos cupcakes de chocolate com cobertura de chocolate.</p>
+                                <a href="#" class="btn btn-custom">Ir para algum lugar</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+    
+            </div>
+        </div>
+    </section>
+    <section id="sobrenosotros2">
+        <p id="nosotrosp2" class="animate__animated animate__bounceInLeft">"Em nossa aconchegante padaria, aperfeiçoamos a
+            arte da panificação por gerações. Somos uma família de padeiros artesanais apaixonados pela tradição e pela
+            qualidade a cada mordida. Todas as manhãs, amassamos com amor e cuidado, usando ingredientes frescos e naturais
+            para criar uma ampla variedade de pães e bolos deliciosos que encantam o paladar de nossa comunidade. Nossa
+            padaria é mais do que um negócio; é um reflexo de nosso compromisso com a autenticidade e compartilhar o sabor
+            reconfortante da panificação caseira com todos os nossos clientes. Esperamos que você nos visite em breve e se
+            torne parte de nossa família de amantes de pães frescos!"</p>
+        <img class="n" id="nosotrospanimg2" src="./pan.jpg" alt="pão">
+    </section>
+    
+    <section id="empanadas">
+        <h2>Empadões</h2>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="d1 product-card">
+                        <div class="product-image">
+                            <img src="pan.jpg" alt="Produto 1">
+                            <div class="product-name">Produto 1</div>
+                        </div>
+                        <div class="animate__animated animate__fadeIn product-details">
+                            <h3>Especificações do Produto 1</h3>
+                            <p>Descrição detalhada do Produto 1.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="d2 product-card">
+                        <div class="product-image">
+                            <img src="pan.jpg" alt="Produto 2">
+                            <div class="product-name">Produto 2</div>
+                        </div>
+                        <div class="animate__animated animate__fadeIn product-details">
+                            <h3>Especificações do Produto 2</h3>
+                            <p>Descrição detalhada do Produto 2.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="d3 product-card">
+                        <div class="product-image">
+                            <img src="pan.jpg" alt="Produto 3">
+                            <div class="product-name">Produto 3</div>
+                        </div>
+                        <div class="animate__animated animate__fadeIn product-details">
+                            <h3>Especificações do Produto 3</h3>
+                            <p>Descrição detalhada do Produto 3.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="d4 product-card">
+                        <div class="product-image">
+                            <img src="pan.jpg" alt="Produto 4">
+                            <div class="product-name">Produto 4</div>
+                        </div>
+                        <div class="animate__animated animate__fadeIn product-details">
+                            <h3>Especificações do Produto 4</h3>
+                            <p>Descrição detalhada do Produto 4.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="d5 product-card">
+                        <div class="product-image">
+                            <img src="pan.jpg" alt="Produto 5">
+                            <div class="product-name">Cupcakes de chocolate</div>
+                        </div>
+                        <div class="animate__animated animate__fadeIn product-details">
+                            <h3>Especificações do Produto 5</h3>
+                            <p>Descrição detalhada do Produto 5.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="d6 product-card">
+                        <div class="product-image">
+                            <img src="pan.jpg" alt="Produto 6">
+                            <div class="product-name">Produto 6</div>
+                        </div>
+                        <div class="animate__animated animate__fadeIn product-details">
+                            <h3>Especificações do Produto 6</h3>
+                            <p>Descrição detalhada do Produto 6.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="nuestrolocal2" style="background-image: url(./hero.jpg);">
+        <div>
+            <div id="canvas-container"></div>
+            <h2>NOSSO PRODUTO ESTRELA, VOCÊ NÃO PODE PERDER!</h2>
+        </div>
+    </section>
+    <section id="nuestrolocal3">
+        <h2>Nossas instalações</h2>
+        <div class="gallery">
+            <div class="picture1"></div>
+            <div class="picture2"></div>
+            <div class="picture3"></div>
+            <div class="picture4"></div>
+        </div>
+    </section>
+    
+    <section id="contacto">
+        <div id="islacristina">
+            <h2>Contato</h2>
+            <p><u>Endereço</u>: Rua do Padeiro, 123</p>
+            <p><u>Telefone</u>: +34 123 456 789</p>
+            <p><u>Localização</u>: Rua Lírios, 126, loja A, 21410 Isla Cristina, Huelva</p>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1588.9776256487662!2d-7.319166661043393!3d37.20129229303394!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd1024f88b4bb215%3A0x4046b175c433167a!2sPanader%C3%ADa%20Las%20mil%20delicias!5e0!3m2!1ses!2ses!4v1695487347792!5m2!1ses!2ses"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div id="form">
+            <h2>Nos escreva</h2>
+            <form class="contact-form">
+                <label for="nombre" class="form-label">Nome:</label>
+                <input type="text" class="form-control" id="nombre" name="nombre" required>
+    
+                <label for="email" class="form-label">E-mail:</label>
+                <input type="email" class="form-control" id="email" name="email" required>
+    
+                <label for="mensaje" class="form-label">Mensagem:</label>
+                <textarea class="form-control" id="mensaje" name="mensaje" rows="4" required></textarea>
+    
+                <button type="submit" class="bf btn-custom">Enviar</button>
+            </form>
+            <p id="redes">Siga-nos nas redes sociais!</p>
+            <div class="template-demo">
+                <button type="button" class="btn btn-social-icon btn-facebook btn-rounded"><i class="fa fa-facebook"></i></button>
+                <button type="button" class="btn btn-social-icon btn-youtube btn-rounded"><i class="fa fa-youtube"></i></button>
+                <button type="button" class="btn btn-social-icon btn-twitter btn-rounded"><i class="fa fa-twitter"></i></button>
+                <button type="button" class="btn btn-social-icon btn-instagram btn-rounded"><i class="fa fa-instagram"></i></button>
+            </div>
+        </div>
+    </section>
+    
+    <footer>
+        <p>José Diego Junquera Lobón - DIW</p>
+    </footer>
+    <script>
+        const informacion = document.getElementById('informacion-cookies');
+        informacion.addEventListener('click', () => {
+            alert ('ESTO ES SÓLO UNA MAQUETACIÓN, MIRA EL LAYOUT DE LA PÁGINA');
+        });
+    </script>
+    <script>
+        // SE PODRIA OPTIMIZAR EL CÓDIGO METIENDOLE UNA CLASE EN VEZ DE UN ID O HACIENDO UNA FUNCIÓN
+        // Obtén referencias a elementos HTML
+        const alertaCookies = document.getElementById('alerta-cookies');
+        const cerrarAlertaBtn1 = document.getElementById('cerrar-alerta1');
+        const cerrarAlertaBtn2 = document.getElementById('cerrar-alerta2');
+
+        // Agregar manejador de eventos para cerrar la alerta
+        cerrarAlertaBtn1.addEventListener('click', () => {
+            alertaCookies.style.display = 'none';
+            // Puedes agregar código aquí para guardar una preferencia de cookies si es necesario.
+        });
+
+        // Agregar manejador de eventos para cerrar la alerta
+        cerrarAlertaBtn2.addEventListener('click', () => {
+            alertaCookies.style.display = 'none';
+            // Puedes agregar código aquí para guardar una preferencia de cookies si es necesario.
+        });
+
+    </script>
+    <script>
+        // Obtén referencias a elementos HTML
+        const abrirModalBtn = document.getElementById('abrir-modal');
+        const modal = document.getElementById('mi-modal');
+        const cerrarModalBtn = document.getElementById('cerrar-modal');
+
+        // Agregar manejadores de eventos para abrir y cerrar el modal
+        abrirModalBtn.addEventListener('click', () => {
+            modal.style.display = 'block';
+        });
+
+        cerrarModalBtn.addEventListener('click', () => {
+            modal.style.display = 'none';
+        });
+
+    </script>
+    <script>
+        const textoMostrarVideo = document.getElementById('texto-mostrar-video');
+        const videoContainer = document.getElementById('video-container');
+
+        textoMostrarVideo.addEventListener('click', () => {
+            textoMostrarVideo.style.display = 'none'; // Oculta el texto
+            videoContainer.style.display = 'block'; // Muestra el video
+        });
+
+    </script>
+    <script>
+        const productCards = document.querySelectorAll('.product-card');
+
+        productCards.forEach((card) => {
+            card.addEventListener('click', () => {
+                card.classList.toggle('active');
+            });
+        });
+
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+// SECTION BOLLERIA
+ScrollReveal().reveal('.b1', { delay: 100 });
+ScrollReveal().reveal('.b2', { delay: 200 });
+ScrollReveal().reveal('.b3', { delay: 300 });
+ScrollReveal().reveal('.b4', { delay: 400 });
+ScrollReveal().reveal('.b5', { delay: 500 });
+ScrollReveal().reveal('.b6', { delay: 600 });
+ScrollReveal().reveal('.b7', { delay: 700 });
+ScrollReveal().reveal('.b8', { delay: 800 });
+ScrollReveal().reveal('.b9', { delay: 900 });
+ScrollReveal().reveal('.b10', { delay: 1000 });
+
+//SECTION EMPANADAS
+ScrollReveal().reveal('.d1', { delay: 100 });
+ScrollReveal().reveal('.d2', { delay: 200 });
+ScrollReveal().reveal('.d3', { delay: 300 });
+ScrollReveal().reveal('.d4', { delay: 400 });
+ScrollReveal().reveal('.d5', { delay: 500 });
+ScrollReveal().reveal('.d6', { delay: 600 });
+//GALLERY
+ScrollReveal().reveal('.picture1', { delay: 150 });
+ScrollReveal().reveal('.picture2', { delay: 300 });
+ScrollReveal().reveal('.picture3', { delay: 450 });
+ScrollReveal().reveal('.picture4', { delay: 600 });
+// OTROS
+ScrollReveal().reveal('.n', { delay: 1000 });
+</script>
+<script>
+    const typed = new Typed ('.typed', {
+        strings:[
+            '<i class="typed-text">em Isla Cristina"</i>',
+            '<i class="typed-text">tradicional"</i>',
+            '<i class="typed-text">de qualidade"</i>'
+            
+        ],
+
+        typeSpeed: 75,
+        startDelay: 300,
+        backSpeed: 75,
+        smartBackspace: true,
+        backDelay: 1500,
+        loop:true,
+        loopCount: false,
+        showCursor: true,
+        cursorChar: '|',
+        contentType: 'html',
+
+    });
+</script>
+<script type="module">
+
+
+        // Importa Three.js
+        import * as THREE from "https://cdn.skypack.dev/three@0.136.0/build/three.module.js";
+
+        // Importa GLTFLoader
+        import { GLTFLoader } from "https://cdn.skypack.dev/three@0.136.0/examples/jsm/loaders/GLTFLoader.js";
+
+        import { OrbitControls } from "https://cdn.skypack.dev/three@0.136.0/examples/jsm/controls/OrbitControls.js";
+
+
+        // Inicializar Three.js
+        const scene = new THREE.Scene();
+        const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
+        const renderer = new THREE.WebGLRenderer();
+        renderer.setSize(640, 360);
+        document.getElementById('canvas-container').appendChild(renderer.domElement);
+
+        // Configurar la posición de la cámara
+        camera.position.z = 5;
+
+        // Crear un loader de glTF
+        const loader = new GLTFLoader();
+
+        // Declara la variable model fuera del callback para que sea accesible en todo el ámbito.
+        let model;
+
+        // Cargar el modelo glTF
+        loader.load(
+            // Ruta del recurso
+            './donut/scene.gltf',
+            // Función llamada cuando se carga el recurso
+            function (gltf) {
+                // Agregar el modelo a la escena
+                model = gltf.scene; // Asigna el modelo a la variable model
+                scene.add(model);
+
+                // Configurar la posición y escala del modelo
+                model.position.set(0, 0, 0); // Cambia las coordenadas según tus necesidades
+                model.scale.set(50, 50, 50); // Cambia la escala según tus necesidades
+            },
+            // Función llamada durante la carga
+            function (xhr) {
+                console.log((xhr.loaded / xhr.total * 100) + '% loaded');
+            },
+            // Función llamada en caso de errores
+            function (error) {
+                console.log('An error happened', error);
+            }
+        );
+
+        // Crear una luz direccional
+        const directionalLight = new THREE.DirectionalLight(0xffffff, 1);
+
+        // Configurar la posición de la luz
+        directionalLight.position.set(0, 1, 0); // Puedes ajustar la posición según tus necesidades
+
+        // Agregar la luz a la escena
+        scene.add(directionalLight);
+        // Inicializar los controles de la cámara
+        const controls = new OrbitControls(camera, renderer.domElement);
+        controls.enableDamping = true; // Agregar amortiguación para movimientos suaves
+        controls.dampingFactor = 0.05; // Ajusta la cantidad de amortiguación según tus preferencias
+
+
+        // Renderizar la escena
+        const animate = () => {
+            requestAnimationFrame(animate);
+
+            // Actualizar los controles de la cámara
+            controls.update();
+
+            // Rotar el modelo 3D (si lo deseas)
+            if (model) {
+                model.rotation.x += 0.01;
+                model.rotation.y += 0.01;
+            }
+
+            renderer.render(scene, camera);
+        };
+
+        animate();
+   
+</script>
+<script src="https://kit.fontawesome.com/824af0479a.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
+
+</body>

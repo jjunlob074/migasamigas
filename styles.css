@@ -1,0 +1,864 @@
+/* Reset de estilos básicos */
+body,
+h1,
+h2,
+h3,
+p,
+ul,
+li,
+form {
+    margin: 0;
+    padding: 0;
+    font-family:Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+
+        background-image: url('./fondo.avif'); /* Reemplaza 'fondo.avif' con la ruta de tu imagen */
+        background-size: cover; /* Escala la imagen para cubrir todo el fondo */
+        background-repeat: no-repeat; /* Evita que la imagen se repita */
+        background-attachment: fixed; /* Fija la imagen en su posición mientras se desplaza la página */
+        background-color: rgba(255, 255, 255, 0.5); /* Color de fondo opaco (blanco con 50% de opacidad) */
+    
+    /* Fondo blanco */
+    color: #333;
+}
+
+#logo {
+    width: 160px;
+    height: 90px;
+    border-radius: 50%;
+}
+
+#logo:hover {
+    box-shadow: 0 0 20px rgba(139, 69, 19, 0.7);
+    /* Sombra de color marrón */
+}
+/* Estilos para la alerta de cookies */
+.alerta-cookies {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: brown;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    z-index: 1000;
+}
+.alerta-cookies a {
+    color: white;
+    font-style: italic;
+    font-weight: bold;
+}
+#cerrar-alerta1,
+#cerrar-alerta2 {
+    background-color: #dcbf85;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+.loop::before {
+    content: "";
+    background: url("./local.jpg");
+    opacity: 0.3; /* Puedes ajustar este valor para cambiar la opacidad de la imagen */
+    position: absolute;
+    border-radius: 10px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+.loop h2,.loop span {
+    font-size: 48px !important;
+    font-style: italic;
+    color: black ;
+    text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.7) !important; /* Sombra para que las letras destaquen más */
+}
+.typed-text {
+    color: #F9AF03;
+    font-weight: bold;
+}
+header {
+    display: flex;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 99;
+    background-color: #dcbf85;
+    /* Marrón claro */
+    justify-content: space-between;
+    text-align: center;
+    padding: 20px 20px 0 20px;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    background-color: #dcbf85;
+    /* Marrón claro */
+    padding: 10px 40px;
+    margin-top: 20px;
+}
+
+nav li {
+    margin: 0 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    font-size: 20px;
+    transition: color 0.2s;
+    /* Transición suave de color */
+    text-shadow: 3px 3px 6px #fff; 
+}
+
+nav a:hover {
+    color: brown; /* Cambia el color al pasar el mouse */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Sombreado sutíl */
+    transform: scale(1.1); /* Aumenta ligeramente el tamaño */
+}
+nav a:hover img {
+    transform: scale(1.1);
+    transition: transform 0.3s; /* Transición suave de transformación */
+}
+section {
+    background-color: rgba(255, 255, 255, 0.95);
+    padding: 20px;
+    margin: 20px;
+    padding: 80px;
+    border-radius: 10px;
+}
+
+section h2 {
+    font-size: 64px;
+    color: brown;
+    /* Marrón claro */
+    margin: 50px;
+    text-align: center;
+}
+
+section h2:hover {
+    color: rgb(99, 47, 5); /* Color diferente cuando se pasa el mouse */
+    transform: scale(1.05); /* Cambia el tamaño del texto al pasar el mouse */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Efecto text-shadow al pasar el mouse */
+}
+
+section p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+section#sobrenosotros,
+section#sobrenosotros2 {
+    /* Centrar contenido en dispositivos móviles */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0 30px 50px;
+}
+
+#nosotrospanimg,
+#nosotrospanimg2 {
+    width: 100%;
+    /* Ocupar todo el ancho en dispositivos móviles */
+    margin: 40px;
+    border-radius: 20px;
+    transition: transform 0.3s ease;
+}
+
+#nosotrospanimg,
+#nosotrospanimg2:hover {
+    transform: scale(1.1);
+}
+
+#nosotrosp,
+#nosotrosp2 {
+    font-style: italic;
+    font-weight: bold;
+    font-size: 26px;
+    /* Tamaño de fuente reducido para dispositivos móviles */
+    max-width: 100%;
+    /* Ajustar texto al ancho de pantalla */
+    text-align: center;
+}
+#nosotrosp:hover,
+#nosotrosp2:hover {
+    
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Efecto text-shadow al pasar el mouse */
+}
+/* Estilo para la sección de contacto */
+section#contacto {
+    text-align: center;
+}
+
+/* Mapa de ubicación */
+section#contacto img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+#idiomas {
+    margin: 50px 20px 0 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+#idiomas a img {
+    width: 80px;
+    height: 70px;
+    margin: 25px 5px 0 5px;
+    transition: transform 0.3s ease;
+}
+
+#idiomas a img:hover {
+    transform: scale(1.1);
+}
+
+#abrir-modal {
+  margin-top: 50px;
+}
+/* Estilos para el modal */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-contenido {
+    background-color: brown;
+    color:white;
+    margin: 15% auto;
+    padding: 30px;
+    width: 50%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+.modal-contenido p {
+    font-size: 25px;
+}
+.modal-contenido a {
+    color:white;
+    font-weight: bold;
+}
+.cerrar-modal {
+    float: right;
+    cursor: pointer;
+    font-size: 25px;
+}
+#nuestrolocal1 {
+    height: 100%;
+    background-size: cover;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#nuestrolocal2 {
+    min-height: 400px;
+    opacity:1;
+    height: 100%;
+    background-size: cover;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+}
+#nuestrolocal2 div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0 30px 50px;
+}
+#nuestrolocal2 img {
+    border-radius: 20px;
+}
+#nuestrolocal2 img:hover {
+    transform: scale(1.1);
+    transition: .3s ease;
+}
+#nuestrolocal2 h2 {
+    color:black;
+    animation: scaleAnimation 2s ease-in-out infinite; /* Aplicar la animación llamada "scaleAnimation" */
+}
+
+@keyframes scaleAnimation {
+  0% {
+    transform: scale(1.0); /* Escala inicial */
+  }
+  50% {
+    transform: scale(1.05); /* Escala al 50% de la animación */
+  }
+  100% {
+    transform: scale(1.0); /* Escala final, de vuelta a 1.0 */
+  }
+}
+#elaboracion {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+}
+
+.elaboracion {
+    text-align: center;
+}
+
+.elaboracion p {
+    color: brown;
+    font-size: 60px;
+    font-weight: bold;
+    font-style: italic;
+    cursor: pointer;
+}
+.elaboracion p:hover {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Efecto de sombreado al pasar el mouse */
+}
+
+#video-container {
+    display: none;
+}
+
+.card {
+    transition: transform 0.3s ease;
+    border: 1px solid brown !important;
+}
+
+.card:hover {
+    transform: translateY(-20px);
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: brown;
+    /* Cambia el color del ícono */
+}
+
+.btn-custom {
+    background-color: #dcbf85;
+    /* Cambia este valor al color deseado */
+    font-weight: bold;
+    color: black;
+    padding: 10px;
+    /* Cambia este valor al color de texto deseado */
+    border-radius: 10px;
+    border:none;
+    text-decoration: none;
+    /* Elimina el borde si es necesario */
+    box-shadow: 2px 2px 10px rgba(150, 75, 0, 0.6);
+}
+.btn-custom:hover {
+    background-color: brown;
+    color: white;
+}
+
+.accordion-item {
+    border: 3px solid white !important;
+}
+
+.accordion-header {
+    margin: 0 !important;
+}
+
+.customac {
+    background-color: #dcbf85;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: brown !important;
+    color: #fff !important;
+    border: 2px solid #dcbf85 !important;
+}
+
+.accordion-body {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+.body-accordion {
+    position: relative;
+}
+
+.body-accordion p {
+    font-size: 30px;
+    font-style: italic;
+    font-weight: bold;
+    text-align: center;
+}
+
+.accordion-button {
+    background-color: #dcbf85 !important;
+    margin: 0 !important;
+    font-size: 28px !important;
+    font-weight: bold !important;
+    font-style: italic !important;
+}
+
+.accordion-button:hover {
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    ;
+}
+
+.accordion-button:focus {
+    box-shadow: 0 0 0 0.25rem #dcbf85 !important;
+}
+
+.body-accordion .btn {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.accordion .btn-custom {
+    background-color: brown;
+    color: white;
+}
+
+.accordion .btn-custom:hover {
+    background-color: white;
+    color: brown;
+}
+
+.accordion img {
+    margin: 20px;
+}
+
+.product-card {
+    display: inline-block;
+    margin: 10px;
+    position: relative;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.product-image {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    margin-left: 50px;
+    margin-bottom: 100px;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.product-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: filter 0.3s ease;
+}
+
+.product-name {
+    position: absolute;
+    bottom: 140px;
+    left: 0;
+    right: 0;
+    color: brown;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 20px;
+    word-wrap: break-word;
+    text-align: center;
+    padding: 5px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.product-card:hover .product-name {
+    opacity: 1;
+}
+
+.product-card:hover .product-image img {
+    filter: blur(2px);
+    opacity: 0.6;
+}
+
+.product-details {
+    min-width: 240px;
+    min-height: 240px;
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    text-align: center;
+    background: rgba(128, 64, 0, 0.8);
+    color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+    z-index: 1;
+    overflow: hidden;
+}
+
+.product-card.active .product-details {
+    display: block;
+}
+
+.gallery {
+    width: 100%;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 20px;
+    display: grid;
+    gap: 3rem;
+    grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+}
+.picture1, .picture2, .picture3, .picture4 {
+    background: url(local.jpg) no-repeat center center/cover;
+    height: 250px;
+    width: 400px;
+    border-radius: 5px;
+}
+
+.gallery h2 {
+    text-align: center;
+}
+#contacto {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0 30px 50px;
+    font-size: 20px;
+    font-weight: bold;
+    font-style: italic;
+}
+
+form label {
+    padding: 20px;
+}
+
+form input {
+    padding: 20px;
+}
+
+.bf {
+    margin: 20px;
+    border: none;
+}
+
+input:focus,
+select:focus,
+select,
+input.form-control:focus,
+textarea.form-control:focus,
+textarea:focus {
+
+    outline: 4px solid #964B00 !important;
+    /* Utiliza #964B00 para un color marrón personalizado */
+    outline-offset: 0;
+    /* Opcional: ajusta el espacio entre el borde y el elemento */
+    box-shadow: 0 0 5px rgba(150, 75, 0, 0.5) !important;
+    /* Box-shadow marrón */
+    -moz-box-shadow: 0 0 5px rgba(150, 75, 0, 0.5) !important;
+    -webkit-box-shadow: 0 0 5px rgba(150, 75, 0, 0.5) !important;
+
+}
+input[type="text"],
+input[type="email"],
+textarea.form-control {
+    background-color: #ece2ce; /* Marrón claro */
+}
+footer {
+    background-color: #dcbf85;
+    width: 100%;
+    min-height: 100px;
+}
+
+footer p {
+    text-align: center;
+    font-weight: bold;
+    padding: 20px;
+}
+#redes {
+    color: brown;
+    font-size: 32px;
+    margin-top: 20px;
+    font-weight: bold;
+    font-style: italic;
+    
+}
+/* SOCIAL BUTTON*/
+.btn.btn-social-icon {
+    width: 50px;
+    height: 50px;
+    padding: 0;
+}
+
+.template-demo > .btn {
+    margin-right: 0.5rem !important;
+}
+
+.template-demo {
+    margin-top: 0.5rem !important;
+}
+
+.btn.btn-rounded {
+    border-radius: 50px;
+}
+
+.btn-outline-facebook {
+    border: 1px solid #3b579d;
+    color: #3b579d;
+}
+
+.btn-outline-youtube {
+    border: 1px solid #e52d27;
+    color: #e52d27;
+}
+
+.btn-outline-twitter {
+    border: 1px solid #2caae1;
+    color: #2caae1;
+}
+
+.btn-outline-instagram {
+    border: 1px solid #ea4c89;
+    color: #ea4c89;
+}
+.btn-outline-facebook:hover {
+    background: #3b579d;
+    color: #ffffff;
+}
+
+.btn-outline-twitter:hover {
+    background: #2caae1;
+    color: #ffffff;
+}
+
+.btn-outline-youtube:hover {
+    background: #e52d27;
+    color: #ffffff;
+}
+
+.btn-outline-instagram:hover {
+    background: #ea4c89;
+    color: #ffffff;
+}
+
+/* Button cover */
+
+.btn-facebook {
+    background: #3b579d;
+    color: #ffffff;
+}
+
+.btn-youtube {
+    background: #e52d27;
+    color: #ffffff;
+}
+
+.btn-twitter {
+    background: #2caae1;
+    color: #ffffff;
+}
+
+.btn-instagram {
+    background: #ea4c89;
+    color: #ffffff;
+}
+
+
+.btn-facebook:hover, .btn-facebook:focus {
+    background: #2d4278;
+    color: #ffffff;
+}
+
+.btn-youtube:hover, .btn-youtube:focus {
+    background: #c21d17;
+    color: #ffffff;
+}
+
+.btn-twitter:hover, .btn-twitter:focus {
+    background: #1b8dbf;
+    color: #ffffff;
+}
+
+.btn-instagram:hover, .btn-instagram:focus {
+    background: #e51e6b;
+    color: #ffffff;
+}
+#canvas-container canvas{
+    opacity: 1 !important;
+    border-radius: 20px;
+}
+
+/* Media query para ajustar estilos en pantallas más pequeñas */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        /* Cambiar a una columna en dispositivos móviles */
+        padding: 0;
+    }
+
+    /* Oculta el menú de navegación */
+    nav {
+        display: none;
+    }
+
+    /* Alinea el logo al centro */
+    h1 {
+        text-align: center;
+        margin-top: 20px;
+        /* Ajusta el margen superior según sea necesario */
+    }
+
+    nav ul {
+        flex-direction: column;
+        /* Cambiar a una columna en dispositivos móviles */
+        align-items: center;
+        /* Centrar en dispositivos móviles */
+    }
+
+    nav li {
+        margin: 10px 0;
+        /* Espaciado entre elementos de navegación en dispositivos móviles */
+    }
+
+    #nosotrosp {
+        font-size: 16px;
+        /* Tamaño de fuente aún más reducido en dispositivos móviles */
+    }
+
+    #idiomas {
+        margin: 250px 20px 0 0;
+    }
+
+    .accordion-item {
+        width: 100%;
+        /* Ajustar el ancho del acordeón en dispositivos móviles */
+    }
+
+    .accordion-item img {
+        width: 160px;
+        height: 90px;
+        margin: 20px;
+    }
+
+    .body-accordion p {
+        font-size: 16px;
+        /* Reducir el tamaño de fuente en dispositivos móviles */
+    }
+
+    .body-accordion .btn {
+        position: static;
+        /* Cambiar la posición del botón en dispositivos móviles */
+        margin-top: 10px;
+        /* Agregar margen superior al botón en dispositivos móviles */
+    }
+
+    section {
+        padding: 20px;
+        /* Reducir el espacio de relleno en dispositivos móviles */
+        margin: 10px;
+        /* Reducir el margen en dispositivos móviles */
+    }
+
+    section h2 {
+        font-size: 30px;
+        /* Reducir el tamaño de fuente en dispositivos móviles */
+        margin: 20px 0;
+        /* Ajustar el margen superior e inferior */
+    }
+
+    section#sobrenosotros,
+    section#sobrenosotros2 {
+        flex-direction: column;
+        /* Apilar elementos en dispositivos móviles */
+        padding: 0;
+        /* Eliminar el espacio de relleno en dispositivos móviles */
+    }
+
+    #nosotrospanimg,
+    #nosotrospanimg2 {
+        width: 100%;
+        /* Ocupar todo el ancho en dispositivos móviles */
+        margin: 20px 0;
+        /* Ajustar el margen superior e inferior */
+    }
+
+    #nosotrosp,
+    #nosotrosp2 {
+        font-size: 16px;
+        /* Reducir el tamaño de fuente en dispositivos móviles */
+        max-width: 100%;
+        /* Ajustar texto al ancho de pantalla */
+        text-align: center;
+    }
+
+    section#contacto {
+        flex-direction: column;
+        /* Apilar elementos en dispositivos móviles */
+        padding: 20px;
+        /* Añadir espacio de relleno en dispositivos móviles */
+    }
+
+    #panaderia {
+        display: flex;
+        justify-content: center;
+        /* Centra horizontalmente */
+        align-items: center;
+        /* Centra verticalmente */
+    }
+
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+        background-color: #fff;
+    }
+
+    .card {
+        margin-top: 10px;
+    }
+
+    .product-card {
+        margin: 20px;
+        padding-left: 30px;
+    }
+
+    form label {
+        padding: 10px 0;
+        /* Reducir el espacio de relleno superior e inferior */
+    }
+
+    form input {
+        padding: 10px 0;
+        /* Reducir el espacio de relleno superior e inferior */
+    }
+
+    iframe {
+        max-width: 100%;
+        /* Hacer que los iframes se ajusten al ancho de pantalla */
+    }
+    #canvas-container canvas{
+        opacity: 1 !important;
+        border-radius: 20px;
+        width: 320px !important;
+        height: 180px !important;
+    }
+} 
