@@ -12,9 +12,11 @@ form {
     font-family:Arial, Helvetica, sans-serif;
     box-sizing: border-box;
 }
-
+html {
+    scroll-behavior: smooth; /* Ajusta la velocidad de scroll para que sea suave */
+    min-width: 100%;
+}
 body {
-
         background-image: url('./fondo.avif'); /* Reemplaza 'fondo.avif' con la ruta de tu imagen */
         background-size: cover; /* Escala la imagen para cubrir todo el fondo */
         background-repeat: no-repeat; /* Evita que la imagen se repita */
@@ -709,8 +711,8 @@ footer p {
     border-radius: 20px;
 }
 
-/* Media query para ajustar estilos en pantallas más pequeñas */
-@media (max-width: 768px) {
+/* Media query para pantallas entre 768px y 425px */
+@media (max-width: 768px) and (min-width: 475px) {
     header {
         flex-direction: column;
         /* Cambiar a una columna en dispositivos móviles */
@@ -774,10 +776,16 @@ footer p {
     }
 
     section {
+        flex-direction: column;
+        text-align: center;
         padding: 20px;
         /* Reducir el espacio de relleno en dispositivos móviles */
         margin: 10px;
         /* Reducir el margen en dispositivos móviles */
+    }
+
+    .carousel-inner .row {
+        display: block;
     }
 
     section h2 {
@@ -855,10 +863,159 @@ footer p {
         max-width: 100%;
         /* Hacer que los iframes se ajusten al ancho de pantalla */
     }
-    #canvas-container canvas{
+
+    #canvas-container canvas {
         opacity: 1 !important;
         border-radius: 20px;
         width: 320px !important;
         height: 180px !important;
     }
-} 
+}
+
+/* Media query para pantallas de 425px hacia abajo */
+@media (max-width: 475px) {
+    header {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    nav {
+        display: none;
+    }
+
+    h1 {
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav li {
+        margin: 10px 0;
+    }
+
+    #nosotrosp {
+        font-size: 14px;
+        /* Fuente aún más pequeña para pantallas pequeñas */
+    }
+
+    #idiomas {
+        margin: 200px 10px 0 0;
+        /* Ajuste del margen para pantallas más pequeñas */
+    }
+
+    .accordion-item {
+        width: 100%;
+    }
+
+    .accordion-item img {
+        width: 140px;
+        height: 80px;
+        margin: 15px;
+        /* Imagenes más pequeñas */
+    }
+
+    .body-accordion p {
+        font-size: 14px;
+        /* Fuente más pequeña para pantallas pequeñas */
+    }
+
+    .body-accordion .btn {
+        position: static;
+        margin-top: 10px;
+    }
+
+    section {
+        flex-direction: column;
+        text-align: center;
+        padding: 15px;
+        margin: 5px;
+    }
+
+    .carousel-inner .row {
+        display: block;
+    }
+
+    section h2 {
+        font-size: 24px;
+        margin: 15px 0;
+    }
+
+    section#sobrenosotros,
+    section#sobrenosotros2 {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    #nosotrospanimg,
+    #nosotrospanimg2 {
+        width: 100%;
+        margin: 15px 0;
+    }
+
+    #nosotrosp,
+    #nosotrosp2 {
+        font-size: 14px;
+        max-width: 100%;
+        text-align: center;
+    }
+
+    section#contacto {
+        flex-direction: column;
+        padding: 15px;
+    }
+    #nuestrolocal2 div{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    #panaderia {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #empanadas .product-card{
+        margin: 0;
+        padding: 0;
+    }
+
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+        background-color: #fff;
+    }
+    .gallery .picture1,
+    .gallery .picture2,
+    .gallery .picture3,
+    .gallery .picture4 {
+        max-width: 350px;
+    }
+    .card {
+        margin-top: 10px;
+    }
+
+    .product-card {
+        margin: 10px;
+        padding-left: 20px;
+    }
+
+    form label {
+        padding: 5px 0;
+    }
+
+    form input {
+        padding: 5px 0;
+    }
+
+    iframe {
+        max-width: 100%;
+    }
+
+    #canvas-container canvas {
+        opacity: 1 !important;
+        border-radius: 20px;
+        width: 280px !important;
+        height: 160px !important;
+    }
+}
